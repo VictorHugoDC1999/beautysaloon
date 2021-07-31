@@ -1,8 +1,8 @@
 /*  abre e fecha o menu quando clicar no icone: hamburguer e x */
 const nav = document.querySelector('#header nav')
-const toggle = document.querySelectorAll('nav .toggle')
+const menuToggle = document.querySelectorAll('nav .menutoggle')
 
-for (const element of toggle) {
+for (const element of menuToggle) {
   element.addEventListener('click', function () {
     nav.classList.toggle('show')
   })
@@ -47,7 +47,7 @@ const swiper = new Swiper('.swiper-container', {
   }
 })
 
-/* ScrollReveal: Mostrar elementos quando der scroll na página */
+/* ScrollReveal: Mostrar elementos quando der scroll na página, vai mostrar de forma mais lenta os elementos como se eles estivessem aparecendo aos poucos */
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -77,7 +77,7 @@ function backToTop() {
   }
 }
 
-/* Menu ativo conforme a seção visível na página */
+/* Menu ativo conforme a seção visível na página, titulo do link do menu fica com fonte bold, conforme a seção que estamos */
 const sections = document.querySelectorAll('main section[id]')
 function activateMenuAtCurrentSection() {
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4

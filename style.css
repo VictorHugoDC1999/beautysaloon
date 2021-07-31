@@ -234,7 +234,7 @@ nav.show ul.grid {
 }
 
 /* toggle menu (função dele é ligar ou desligar, se estiver desligado ele vai ligar, se estiver ligado ele vai desligar) */
-.toggle {
+.menutoggle {
   color: var(--base-color);
   font-size: 1.5rem;
   cursor: pointer;
